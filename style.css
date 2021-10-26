@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+body,
+h2,
+p{
+    margin: 0;
+}
+
+body{
+    position: relative;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(0, 0%, 95%);
+}
+
+.card_heading{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.componet-container{
+    max-width: 900px;
+    margin: 10% auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.component-container_card{
+    max-width: 300px;
+    /* background: grey; */
+    padding: 40px;
+}
+
+/* -----backgrounds seting */
+
+.sedans{
+    background: hsl(31, 77%, 52%) ;
+}
+
+.suvs{
+    background: hsl(184, 100%, 22%) ;
+}
+
+.luxury{
+    background: hsl(179, 100%, 13%);
+}
+
+/* ----------------------- */
+
+.card-logo{
+    margin-bottom: 2em;
+}
+
+.card_text{
+    margin-top: 2em;
+    line-height: 1.6;
+}
+
+.card_btn{
+    display: inline-block;
+    text-decoration: none;
+    background: hsl(0, 0%, 95%);
+    color: t;
+    padding: 1em 2.5em;
+    margin-top: 5em;
+    border-radius: 30px;  
+}
+
+.card_btn:hover,
+.card_btn:focus{
+    background: none;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+
+/* footer default styles */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: black;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
