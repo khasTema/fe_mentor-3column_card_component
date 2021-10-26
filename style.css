@@ -1,3 +1,4 @@
+/* -----normalize------ */
 *{
     box-sizing: border-box;
 }
@@ -7,6 +8,7 @@ h2,
 p{
     margin: 0;
 }
+/* ----------------------- */
 
 body{
     position: relative;
@@ -25,16 +27,29 @@ body{
 }
 
 .componet-container{
-    max-width: 900px;
     margin: 10% auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .component-container_card{
     max-width: 300px;
-    /* background: grey; */
     padding: 40px;
+}
+
+@media screen and (max-width: 899px) {
+    .component-container_card:last-of-type{
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .component-container_card{
+        max-width: 500px;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
 }
 
 /* -----backgrounds seting */
@@ -43,12 +58,24 @@ body{
     background: hsl(31, 77%, 52%) ;
 }
 
+.sedans .card_btn{
+    color: hsl(31, 77%, 52%);
+}
+
 .suvs{
     background: hsl(184, 100%, 22%) ;
 }
 
+.suvs .card_btn{
+    color: hsl(184, 100%, 22%) ;
+}
+
 .luxury{
     background: hsl(179, 100%, 13%);
+}
+
+.luxury .card_btn{
+    color: hsl(179, 100%, 13%);
 }
 
 /* ----------------------- */
